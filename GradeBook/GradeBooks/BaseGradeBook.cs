@@ -31,7 +31,7 @@ namespace GradeBook.GradeBooks
 
         public void RemoveStudent(string name)
         {
-            if (string.IsNullOrEmpty(name))
+            if (string.IsNullOrEmpty(name)) 
                 throw new ArgumentException("A Name is required to remove a student from a gradebook.");
             var student = Students.FirstOrDefault(e => e.Name == name);
             if (student == null)
